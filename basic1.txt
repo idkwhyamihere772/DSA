@@ -1,5 +1,40 @@
+created by kunal...
 What is Data Structure ?
 -> Data Structure is arrangement of data so that It can be used efficiently.
 
-Why to use Data Structure ?
--> 
+Why to use Data Structures ?
+-> 1. these are essential ingredients in creating fast and efficient algorithms...
+   2. they help to mange and organise data...
+   3.they make code cleaner and easy to understand...
+
+
+
+ ABSTRACT DATA TYPES : 
+An Abstract data type (ADT) is an abstraction of a data structure which provides only the interface to which a data structure must adhere to .
+
+*abstraction refers to hiding the complexity and showing only the essential features .
+
+so as I understand it simply refers to a blueprint for a data structure. It tells you what you can do with the data (like add, remove, or search), but not how it does it.
+
+like most of our phone apps ...
+
+for example : 
+
+we can take list as an abstraction ...
+
+and List can be implimented in two ways 
+1. Dynamic Array
+2. Linked List
+
+we would see about these in ahead notes and files 
+here the thing is the List is an abstraction which is simply presented in front of us , we dont know whether it is an dynamic array or a linked list..
+
+and just for more idea there are queue , stack and maps these all are structure types...
+for basic knowledge 
+*Queue simply refers to a real life Queue which means it would follow FIFO(first in, first OUT) like in real life scenario who comes first gets their work done first ..
+
+*Stack simply means a tower of data and it follows LIFO (last in, first out) for example assume 10 plates placed over each other,  so the last plate u placed in top , u have to choose that first 
+ it simply means which comes in last (like last plate) have to go out first.
+
+*Maps for now understand this as we studied in discrete mathematics...
+
