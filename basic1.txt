@@ -1,0 +1,5 @@
+What is Data Structure ?
+-> Data Structure is arrangement of data so that It can be used efficiently.
+
+Why to use Data Structure ?
+-> 
