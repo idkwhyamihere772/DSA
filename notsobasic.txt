@@ -1,0 +1,55 @@
+COMPLEXITY ANALYSIS
+
+*it refers to how much time it takes to to finish our algorithm
+*how much space does our algorithm needs for execution
+*it is used to estimate the performance of an algorithm
+
+BIG-O NOTATION
+
+BIG-O notation is used to understand how algorithms behave as the size of input increases and it helps us to analyze the performance
+
+it describes the upper bound on the time or space an algorithm uses :
+1.time complexity : how the number of steps increases with the size of input...
+2.space complexity : how memory requirement grows as the size of input increases...
+
+Common Big-O Notations:
+1. O(1) : constant time 
+        for example : accessing an element in an array by index
+        takes the same amount of time regardless of the size of the array
+        now u may wonder how it would take constant (same amount of time) time to access an element in an array even if has thousands of elements
+
+        because here we are not iterating (looping or can say checking each element one by one) through the array...
+        we are directly accessing the element at a specific index
+        so it takes us directly to the element we want to access 
+        for ex:
+        int arr[5] = {1,2,3,4,5};
+        int x = arr[2]; // accessing the element at index 2
+        here it takes the same amount of time to access the element at index 2 regardless of the size of the array
+
+2. O(n) : linear time 
+        where n is the size of the input
+        for example : searching for an element in an unsorted array
+        we have to check each element one by one until we find the element we are looking for
+        more the elements in the array, more time it will take to find the element
+        so the time taken grows linearly with the size of the input
+
+3. O(n^2) : Quadratic time
+        where n is the size of the input 
+        for example : bubble sort algorithm
+                      bubble sort algorithm compares pair of elements in the array and swaps them if they are in the wrong order
+                      it does this for each element in the array
+                      the loop excecutes until it gets sorted .
+                            so the time taken grows quadratically with the size of the input
+                            thats why bubble sort is not efficient for large arrays
+4. O(log n) : logarithmic time
+        where n is the size of the input
+        for example : binary search algorithm
+                      binary search algorithm works on sorted arrays
+                      it divides the array into two halves and checks if the element is in the left half or right half
+                      it does this until it finds the element or the array is empty
+                      so the time taken grows logarithmically with the size of the input
+                      this is why binary search is much faster than linear search for large arrays 
+
+        
+
+        
