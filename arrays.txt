@@ -42,6 +42,49 @@ STATIC AND DYNAMIC ARRAYS
     DYNAMIC ARRAYS refers to arrays that can be resized during the program execution .
     and the elements are indexable from range[0,size-1]...
 
+    to make a dynamic array, we need to allocate memory for the array at runtime using dynamic memory allocation
+    in cpp we can use the new operator to allocate memory for a dynamic array
+    and the delete operator to deallocate memory for a dynamic array
+
+    use of dynamic arrays:
+    1. when the size of the array is not known at compile time and can change during the program execution
+    2. when the array is large and requires dynamic memory allocation
+    3. when the array is used for complex data structures like trees and graphs
+    4. when the array is used for complex algorithms like sorting and searching
+    5. when the array is used for complex data structures like stacks, queues, and linked lists
+
+    now lets talk about complexity ananlysis of dynamic arrays:
+    we can do many operations on dynamic arrays like:
+                     time complexity
+    1. Access           O(1)
+    2. Search           O(n)
+    3. Insert           O(n)
+    4. Delete           O(n)
+    5.appending         O(1) 
+
+
+as we know to access an element in a dynamic array by index takes O(1) time complexity
+because we can directly access the element at a specific index without iterating through the array
+
+and in search
+searching for an element in a dynamic array takes O(n) time complexity
+because we have to check each element one by one until we find the element we are looking for
+
+and in insert 
+inserting an element in a dynamic array takes O(n) time complexity
+because we have to shift all the elements after the insertion point to the right
+
+and in delete
+deleting an element in a dynamic array takes O(n) time complexity
+because we have to shift all the elements after the deletion point to the left
+
+and in appending
+appending an element to a dynamic array takes O(1) time complexity
+because we can add the element to the end of the array without shifting any elements
+In case the array is full, we have to allocate a new array with double the size and copy the elements from the old array to the new array
+this takes O(n) time complexity...
+
+
     
 
     
