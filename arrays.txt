@@ -82,7 +82,7 @@ and in appending
 appending an element to a dynamic array takes O(1) time complexity
 because we can add the element to the end of the array without shifting any elements
 In case the array is full, we have to allocate a new array with double the size and copy the elements from the old array to the new array
-this takes O(n) time complexity...
+this takes O(n) time complexity....
 
 
     
