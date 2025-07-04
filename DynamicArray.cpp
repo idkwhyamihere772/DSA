@@ -15,9 +15,7 @@ void addName(string*& DArr,int &size,string newName){
     DArr = temp;
     ++size;
 
-void deleteName(string *& DArr, int &size , int index){
-   
-}
+void deleteName(string *& DArr, int &size , int index);
 }
 void searchName(string *& DArr ,int &size,string nametosearch){
     for(int i = 0;i<size;i++){
