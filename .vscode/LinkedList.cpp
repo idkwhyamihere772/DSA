@@ -26,17 +26,17 @@ int main() {
     fourth = (struct Node *)malloc(sizeof(struct Node));
 
     //Linking Head and Second Node
-    head-> data = 1;
+    head-> data = 11;
     head-> next = second;
 
     //Linking Second and Third Node
-    second->data = 2;
+    second->data = 21;
     second->next = third;
     //Linking Third and Fourth Node
-    third->data = 3;
+    third->data = 33;
     third->next = fourth;
     //Linking Fourth Node to NULL
-    fourth->data = 4;
+    fourth->data = 43;
     fourth->next = NULL;
     trav(head);
 
