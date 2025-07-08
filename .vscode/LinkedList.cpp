@@ -39,6 +39,7 @@ int main() {
     fourth->data = 43;
     fourth->next = NULL;
     trav(head);
+    //pending updates
 
 
 
