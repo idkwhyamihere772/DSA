@@ -15,6 +15,26 @@ void trav(struct Node * ptr){
 		ptr = ptr -> next;
 	}
 }
+struct Node * Atfirst(struct Node * head,string data){
+	struct Node * ptr = new Node;
+	ptr -> data = data;
+	ptr -> next = head;
+	return ptr;
+}
+struct Node *Atindex(struct Node * head,int index,string data){
+	struct Node * ptr = new Node;
+	struct Node * temp = head;
+	int i = 0;
+	while(i!=index-1){
+		temp = temp-> next;
+		i++;
+	}
+	ptr ->data = data;
+	ptr->next = temp->next;
+	temp->next = ptr;
+    return head;
+} 
+
 int main(){
 	struct Node * head;
 	struct Node * second;
@@ -42,11 +62,15 @@ int main(){
 	third -> data = "Third Node -> ";
 	third -> next = fourth;
 	
-	fourth -> data = "fourth Node -> NULL";
+	fourth -> data = "fourth Node -> ";
 	fourth -> next = NULL;
+	head = Atindex(head, 3, "new node -> ");
 	
+    head = Atfirst(head,"new node -> ");
+
+	head = Atlast(head,"new node -> NULL");
 	trav(head);
-	
-	
+	cout<<endl;
+
 	
 }
