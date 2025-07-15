@@ -35,6 +35,17 @@ struct Node *Atindex(struct Node * head,int index,string data){
     return head;
 } 
 
+struct Node *Atlast(struct Node * head,string data){
+	struct Node *ptr = new Node;
+	ptr->data = data;
+	struct Node *p = head;
+	while(p-> next != NULL){
+		p = p->next;
+	}
+	p->next = ptr;
+	ptr->next = NULL;
+	return head;
+}
 int main(){
 	struct Node * head;
 	struct Node * second;
