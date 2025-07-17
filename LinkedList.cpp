@@ -3,27 +3,30 @@
 #include <string>
 
 using namespace std;
-
+template <class T>
 struct Node{
-	string data;
-	struct Node * next;
+	T data;
+	struct Node<T> * next;
 };
-
-void trav(struct Node * ptr){
+template <class T>
+struct Node<T> * add(struct Node<T> * head1,struct Node<T> * head2);
+void trav(struct Node<T> * ptr){
 	while(ptr != NULL){
 		cout<<ptr -> data;
 		ptr = ptr -> next;
 	}
 }
-struct Node * Atfirst(struct Node * head,string data){
-	struct Node * ptr = new Node;
+template<class T>
+struct Node<T> * Atfirst(struct Node<T> * head,T data){
+	struct Node<T> * ptr = new Node;
 	ptr -> data = data;
 	ptr -> next = head;
 	return ptr;
 }
-struct Node *Atindex(struct Node * head,int index,string data){
-	struct Node * ptr = new Node;
-	struct Node * temp = head;
+template<class T>
+struct Node<T> *Atindex(struct Node <T>* head,int index,T data){
+	struct Node<T> * ptr = new Node;
+	struct Node <T>* temp = head;
 	int i = 0;
 	while(i!=index-1){
 		temp = temp-> next;
@@ -34,11 +37,11 @@ struct Node *Atindex(struct Node * head,int index,string data){
 	temp->next = ptr;
     return head;
 } 
-
-struct Node *Atlast(struct Node * head,string data){
-	struct Node *ptr = new Node;
+template<class T>
+struct Node <T>*Atlast(struct Node <T> * head,T data){
+	struct Node <T> *ptr = new Node;
 	ptr->data = data;
-	struct Node *p = head;
+	struct Node <T> *p = head;
 	while(p-> next != NULL){
 		p = p->next;
 	}
@@ -82,6 +85,15 @@ int main(){
 	head = Atlast(head,"new node -> NULL");
 	trav(head);
 	cout<<endl;
+	struct Node * head1 = new Node;
+	struct Node * second1 = new Node;
+	struct Node * third1 = new Node;
+
+	struct Node * head2 = new Node;
+	struct Node * second2 = new Node;
+	struct Node * third2 = new Node;
+
+    head1->data
 
 	
 }
