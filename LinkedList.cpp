@@ -15,6 +15,14 @@ void trav(struct Node * ptr){
 		ptr = ptr -> next;
 	}
 }
+
+struct Node * atstart(struct Node * head,int data){
+	struct Node * ptr = new Node;
+	ptr -> data = data;
+	ptr->next = head;
+	return ptr;
+}
+
 int main(){
 	struct Node * head;
 	struct Node * second;
@@ -46,6 +54,7 @@ int main(){
 	fourth -> next = NULL;
 	
 	trav(head);
+	
 	
 	
 }
