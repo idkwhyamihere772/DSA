@@ -22,10 +22,9 @@ Node * at_first(Node * head , string data){
     Node * ptr = new Node;
     Node * temp = head;
     ptr->data = data;
-    do
-    {
+    while(temp->next != head){
         temp = temp->next;
-    } while (temp->next != head);
+    }
     temp->next = ptr;
     ptr->next = head;
     return ptr;
