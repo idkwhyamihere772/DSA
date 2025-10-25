@@ -14,6 +14,7 @@ int isempty(Node * top){
     }
     return false;
 }
+
 int isfull(Node * top){
     Node * new_node = new Node;
     if(new_node == NULL){
